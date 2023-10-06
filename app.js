@@ -6,7 +6,7 @@ const app = express();
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors({ origin: 'https://portfolio0826.netlify.app' }))
+app.use(cors({ origin: '*' }))
 
 // Configure nodemailer to send emails
 const transporter = nodemailer.createTransport({
