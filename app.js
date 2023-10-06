@@ -6,7 +6,7 @@ const app = express();
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors({ origin: '*' }))
+app.use(cors({ origin: 'https://portfolio0826.onrender.com' }))
 
 // Configure nodemailer to send emails
 const transporter = nodemailer.createTransport({
